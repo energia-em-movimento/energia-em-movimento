@@ -1,0 +1,823 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Energia em Movimento — Sustentabilidade e Saúde em um Só Ritmo</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            sans: ['"Nunito"', "ui-sans-serif", "system-ui"],
+          },
+          extend: {
+            colors: {
+              verdeEnergia: "#22c55e",
+              azulMovimento: "#0ea5e9",
+              amareloEnergia: "#facc15",
+            },
+            boxShadow: {
+              suave: "0 12px 30px rgba(14, 165, 233, 0.15)",
+              card: "0 18px 45px rgba(34, 197, 94, 0.12)",
+            },
+          },
+        },
+      };
+    </script>
+    <style>
+      * {
+        box-sizing: border-box;
+        scroll-behavior: smooth;
+        
+      }
+      .floating-badge {
+        animation: badgeBounce 4s ease-in-out infinite;
+      }
+
+      .floating-badge:nth-child(2) {
+        animation-delay: 1s;
+      }
+
+      .floating-badge:nth-child(3) {
+        animation-delay: 2s;
+      }
+
+      @keyframes badgeBounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-10px);
+        }
+      }
+
+      .lamp-pulse {
+        animation: lampPulse 2s ease-in-out infinite;
+      }
+
+      @keyframes lampPulse {
+        0%,
+        100% {
+          transform: scale(0.92);
+          filter: drop-shadow(0 0 0 rgba(250, 204, 21, 0.25));
+        }
+        50% {
+          transform: scale(1);
+          filter: drop-shadow(0 0 18px rgba(250, 204, 21, 0.6));
+        }
+      }
+    </style>
+  </head>
+  <body class="bg-white font-sans text-slate-800">
+    <!-- Header -->
+    <header class="fixed inset-x-0 top-0 z-50 border-b border-slate-100 bg-white/95 backdrop-blur shadow-sm">
+      <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
+        <a href="#inicio" class="flex items-center gap-2 text-lg font-extrabold text-verdeEnergia">
+          <i aria-hidden="true" class="bx bxs-bolt-circle text-2xl text-amareloEnergia"></i>
+          Energia em Movimento
+        </a>
+        <nav class="hidden items-center gap-6 text-sm font-semibold text-slate-700 md:flex">
+          <a class="transition hover:text-azulMovimento" href="#inicio">Início</a>
+          <a class="transition hover:text-azulMovimento" href="#projeto">O Projeto</a>
+          <a class="transition hover:text-azulMovimento" href="#objetivos">Objetivos</a>
+          <a class="transition hover:text-azulMovimento" href="#pesquisa">Pesquisa</a>
+          <a class="transition hover:text-azulMovimento" href="#equipe">Equipe</a>
+          <a class="transition hover:text-azulMovimento" href="#contato">Contato</a>
+        </nav>
+        <a
+          href="#importancia"
+          class="rounded-full bg-azulMovimento px-5 py-2 text-sm font-bold text-white shadow-md transition hover:-translate-y-1 hover:shadow-lg"
+        >
+          Por que é importante?
+        </a>
+      </div>
+    </header>
+
+    <main class="pt-28" id="inicio">
+      <!-- Hero Section -->
+      <section class="bg-gradient-to-br from-white via-emerald-50 to-sky-50">
+        <div class="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-16 lg:flex-row lg:items-center">
+          <div class="flex-1 space-y-6">
+            <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-azulMovimento shadow-sm">
+              <i aria-hidden="true" class="bx bxs-leaf text-lg text-verdeEnergia"></i>
+              Projeto escolar • Feira de Ciências
+            </span>
+            <h1 class="text-4xl font-extrabold text-slate-900 sm:text-5xl">
+              Energia em Movimento
+            </h1>
+            <p class="text-xl font-semibold text-slate-700">
+              Sustentabilidade e saúde em um só ritmo.
+            </p>
+            <p class="text-lg text-slate-600">
+              Nosso desafio é transformar o movimento das pessoas em energia elétrica limpa por meio de uma academia ecológica. Um jeito divertido de unir corpo, tecnologia e planeta!
+            </p>
+            <div class="flex flex-wrap gap-3">
+              <a
+                href="#projeto"
+                class="rounded-full bg-verdeEnergia px-6 py-3 text-sm font-bold text-white shadow-lg shadow-verdeEnergia/30 transition hover:-translate-y-1 hover:shadow-xl"
+              >
+                Conheça o projeto
+              </a>
+              <a
+                href="#pesquisa"
+                class="rounded-full border border-azulMovimento px-6 py-3 text-sm font-bold text-azulMovimento transition hover:-translate-y-1 hover:bg-azulMovimento hover:text-white"
+              >
+                Ver resultados da pesquisa
+              </a>
+            </div>
+            <div class="flex flex-wrap items-center gap-3 pt-4 text-sm font-semibold text-slate-700">
+              <span class="floating-badge inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-sm">
+                <i aria-hidden="true" class="bx bxs-bulb text-lg text-amareloEnergia"></i>
+                Energia limpa gerada com pedais
+              </span>
+              <span class="floating-badge inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-sm">
+                <i aria-hidden="true" class="bx bx-dumbbell text-lg text-azulMovimento"></i>
+                Movimento faz bem para o corpo
+              </span>
+              <span class="floating-badge inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-sm">
+                <i aria-hidden="true" class="bx bxs-group text-lg text-verdeEnergia"></i>
+                Comunidade aprovou a ideia
+              </span>
+            </div>
+          </div>
+          <div class="flex-1">
+            <div class="relative mx-auto max-w-md rounded-[36px] bg-white/90 p-6 shadow-suave">
+              <div class="absolute -top-8 right-10 flex items-center gap-2 rounded-full bg-amareloEnergia px-4 py-2 text-sm font-bold text-slate-800 shadow">
+                <i aria-hidden="true" class="bx bxs-cog text-base"></i>
+                Energia + Saúde
+              </div>
+              <div class="absolute -bottom-6 left-6 flex items-center gap-2 rounded-full bg-verdeEnergia px-4 py-2 text-sm font-bold text-white shadow">
+                <i aria-hidden="true" class="bx bxs-battery-charging text-base"></i>
+                Recarga sustentável
+              </div>
+              <svg
+                class="w-full"
+                viewBox="0 0 320 240"
+                role="img"
+                aria-labelledby="illusTitle illusDesc"
+              >
+                <title id="illusTitle">Ilustração infantil de academia ecológica</title>
+                <desc id="illusDesc">
+                  Crianças pedalando bicicletas conectadas a um gerador que acende uma lâmpada e carrega equipamentos.
+                </desc>
+                <defs>
+                  <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
+                    <stop offset="0%" stop-color="#bbf7d0" />
+                    <stop offset="100%" stop-color="#bae6fd" />
+                  </linearGradient>
+                </defs>
+                <rect width="320" height="240" rx="28" fill="url(#bgGradient)"></rect>
+                <path d="M30 180 Q160 140 290 180" fill="#dcfce7" />
+                <g transform="translate(60,80)">
+                  <rect x="0" y="84" width="60" height="10" rx="5" fill="#22c55e" />
+                  <rect x="140" y="84" width="60" height="10" rx="5" fill="#0ea5e9" />
+                  <circle cx="16" cy="84" r="16" fill="#0ea5e9" />
+                  <circle cx="44" cy="84" r="16" fill="#facc15" />
+                  <circle cx="156" cy="84" r="16" fill="#facc15" />
+                  <circle cx="184" cy="84" r="16" fill="#22c55e" />
+                  <rect x="72" y="10" width="56" height="60" rx="18" fill="#facc15" />
+                  <rect x="94" y="-10" width="12" height="20" rx="6" fill="#facc15" />
+                  <circle cx="100" cy="40" r="20" fill="#fef3c7" />
+                  <path d="M100 60 L110 100" stroke="#0ea5e9" stroke-width="6" stroke-linecap="round" />
+                  <path d="M100 60 L80 100" stroke="#22c55e" stroke-width="6" stroke-linecap="round" />
+                  <path d="M100 60 L140 40" stroke="#0f172a" stroke-width="6" stroke-linecap="round" />
+                  <path d="M100 22 L120 -10" stroke="#22c55e" stroke-width="6" stroke-linecap="round" />
+                </g>
+                <g transform="translate(40,60)">
+                  <rect x="0" y="0" width="48" height="48" rx="24" fill="#22c55e" />
+                  <path d="M20 12 L28 12 L24 22 H32 L18 44 L22 32 H14 Z" fill="#fef9c3" />
+                </g>
+                <g transform="translate(220,40)">
+                  <rect x="0" y="0" width="60" height="36" rx="12" fill="#0284c7" />
+                  <rect x="10" y="12" width="40" height="12" rx="6" fill="#e0f2fe" />
+                </g>
+                <g transform="translate(220,92)">
+                  <rect x="0" y="0" width="60" height="80" rx="16" fill="#bae6fd" />
+                  <rect x="14" y="18" width="32" height="44" rx="12" fill="#0ea5e9" />
+                  <circle cx="10" cy="10" r="6" fill="#22c55e" />
+                  <circle cx="50" cy="10" r="6" fill="#facc15" />
+                </g>
+              </svg>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- O Projeto -->
+      <section class="mx-auto max-w-6xl px-6 py-16" id="projeto">
+        <div class="flex flex-col gap-8 lg:flex-row lg:items-start">
+          <div class="lg:w-1/2">
+            <h2 class="flex items-center gap-3 text-3xl font-extrabold text-slate-900">
+              <i aria-hidden="true" class="bx bxs-bulb text-4xl text-azulMovimento"></i>
+              O Projeto
+            </h2>
+            <p class="mt-4 text-lg text-slate-600">
+              “Energia em Movimento” é uma academia ecológica escolar. Ao pedalar, as pessoas produzem energia cinética que é convertida em eletricidade para acender lâmpadas, carregar dispositivos e alimentar a maquete do projeto.
+            </p>
+            <p class="mt-4 text-lg text-slate-600">
+              Com linguagem simples e divertida, mostramos que a saúde do corpo pode caminhar junto com a saúde do planeta. Além do protótipo funcional, elaboramos materiais educativos para toda a comunidade escolar.
+            </p>
+          </div>
+          <div class="grid flex-1 gap-6 sm:grid-cols-2">
+            <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-lg">
+              <i aria-hidden="true" class="bx bxs-cog text-3xl text-azulMovimento"></i>
+              <h3 class="mt-4 text-xl font-bold text-slate-900">Tecnologia Pedal Power</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Bicicletas conectadas a geradores convertem o movimento em energia elétrica. Visores mostram a produção em tempo real.
+              </p>
+            </article>
+            <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-lg">
+              <i aria-hidden="true" class="bx bxs-leaf text-3xl text-verdeEnergia"></i>
+              <h3 class="mt-4 text-xl font-bold text-slate-900">Maquete sustentável</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                A maquete interativa demonstra a energia percorrendo fios até acender pequenas lâmpadas e carregar um painel educativo.
+              </p>
+            </article>
+            <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-lg">
+              <i aria-hidden="true" class="bx bxs-book-heart text-3xl text-amareloEnergia"></i>
+              <h3 class="mt-4 text-xl font-bold text-slate-900">Material didático</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Cartazes, infográficos e vídeos curtos explicam o passo a passo da geração de energia de forma divertida.
+              </p>
+            </article>
+            <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-lg">
+              <i aria-hidden="true" class="bx bxs-happy-heart-eyes text-3xl text-rose-400"></i>
+              <h3 class="mt-4 text-xl font-bold text-slate-900">Aprovação da comunidade</h3>
+              <p class="mt-2 text-sm text-slate-600">
+                Oficinas abertas e questionários mostraram que moradores e estudantes apoiam a ideia e querem participar.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galeria da Maquete -->
+      <section class="bg-white" id="galeria">
+        <div class="mx-auto max-w-6xl px-6 py-16">
+          <div class="space-y-4">
+            <h2 class="flex items-center gap-3 text-3xl font-extrabold text-slate-900">
+              <i aria-hidden="true" class="bx bxs-camera text-4xl text-azulMovimento"></i>
+              Momentos da Maquete em Ação
+            </h2>
+            <p class="max-w-3xl text-lg text-slate-600">
+              Reserve estes espaços para inserir fotos reais da equipe construindo e testando a maquete.
+              Substitua cada bloco pela imagem correspondente assim que elas estiverem prontas.
+            </p>
+          </div>
+          <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <figure class="group rounded-3xl bg-white p-5 shadow-card">
+              <div
+                class="flex aspect-video w-full items-center justify-center rounded-2xl border-2 border-dashed border-azulMovimento/40 bg-sky-50/60 text-center text-sm text-slate-500 transition group-hover:border-azulMovimento group-hover:bg-sky-100/70"
+              >
+                <span class="max-w-[200px] leading-relaxed">
+                  <strong class="block text-sm font-semibold text-azulMovimento">Foto 1 — Montagem</strong>
+                  Adicione aqui a foto dos estudantes montando a base da maquete.
+                </span>
+              </div>
+              <figcaption class="mt-4 text-sm font-semibold text-slate-700">
+                Montagem da estrutura com bicicletas e geradores.
+              </figcaption>
+            </figure>
+            <figure class="group rounded-3xl bg-white p-5 shadow-card">
+              <div
+                class="flex aspect-video w-full items-center justify-center rounded-2xl border-2 border-dashed border-verdeEnergia/40 bg-emerald-50/60 text-center text-sm text-slate-500 transition group-hover:border-verdeEnergia group-hover:bg-emerald-100/70"
+              >
+                <span class="max-w-[200px] leading-relaxed">
+                  <strong class="block text-sm font-semibold text-verdeEnergia">Foto 2 — Testes</strong>
+                  Insira a imagem dos testes de pedal para gerar energia.
+                </span>
+              </div>
+              <figcaption class="mt-4 text-sm font-semibold text-slate-700">
+                Testando a produção de energia com os pedais ecológicos.
+              </figcaption>
+            </figure>
+            <figure class="group rounded-3xl bg-white p-5 shadow-card">
+              <div
+                class="flex aspect-video w-full items-center justify-center rounded-2xl border-2 border-dashed border-amareloEnergia/40 bg-yellow-50/60 text-center text-sm text-slate-500 transition group-hover:border-amareloEnergia group-hover:bg-yellow-100/70"
+              >
+                <span class="max-w-[200px] leading-relaxed">
+                  <strong class="block text-sm font-semibold text-amareloEnergia">Foto 3 — Apresentação</strong>
+                  Coloque a foto da equipe apresentando a maquete na feira.
+                </span>
+              </div>
+              <figcaption class="mt-4 text-sm font-semibold text-slate-700">
+                Equipe mostrando o funcionamento para o público visitante.
+              </figcaption>
+            </figure>
+            <figure class="group rounded-3xl bg-white p-5 shadow-card sm:col-span-2 lg:col-span-3">
+              <div
+                class="flex aspect-[16/5] w-full items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 text-center text-sm text-slate-500 transition group-hover:border-slate-400 group-hover:bg-slate-100"
+              >
+                <span class="max-w-xl leading-relaxed">
+                  <strong class="block text-sm font-semibold text-slate-700">Foto panorâmica — Equipe completa</strong>
+                  Use este espaço para uma foto panorâmica dos alunos trabalhando juntos na maquete. Ideal para
+                  destacar o espírito de equipe e o estande montado.
+                </span>
+              </div>
+              <figcaption class="mt-4 text-sm font-semibold text-slate-700">
+                Registro coletivo da equipe Energia em Movimento na montagem final.
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </section>
+
+      <!-- Importância -->
+      <section class="bg-emerald-50/60" id="importancia">
+        <div class="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-16 lg:flex-row lg:items-center">
+          <div class="lg:w-1/3">
+            <h2 class="flex items-center gap-3 text-3xl font-extrabold text-slate-900">
+              <i aria-hidden="true" class="bx bxs-heart text-4xl text-amareloEnergia"></i>
+              Por que é importante?
+            </h2>
+            <p class="mt-4 text-lg text-slate-600">
+              Em cada pedalada, unimos saúde, tecnologia e a missão de cuidar do planeta. O projeto desperta hábitos saudáveis e ainda reduz o consumo de energia tradicional.
+            </p>
+          </div>
+          <div class="grid flex-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
+              <h3 class="flex items-center gap-2 text-lg font-bold text-slate-900">
+                <i aria-hidden="true" class="bx bxs-first-aid text-xl text-verdeEnergia"></i>
+                Saúde
+              </h3>
+              <p class="mt-3 text-sm text-slate-600">
+                Crianças e jovens se movimentam mais, aprendendo que exercício faz bem para o corpo e para a mente.
+              </p>
+            </article>
+            <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
+              <h3 class="flex items-center gap-2 text-lg font-bold text-slate-900">
+                <i aria-hidden="true" class="bx bx-chip text-xl text-azulMovimento"></i>
+                Tecnologia
+              </h3>
+              <p class="mt-3 text-sm text-slate-600">
+                Mostramos na prática como converter energia cinética em energia elétrica — um conceito científico em ação!
+              </p>
+            </article>
+            <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
+              <h3 class="flex items-center gap-2 text-lg font-bold text-slate-900">
+                <i aria-hidden="true" class="bx bxs-leaf text-xl text-verdeEnergia"></i>
+                Sustentabilidade
+              </h3>
+              <p class="mt-3 text-sm text-slate-600">
+                Cada watt gerado pelos pedais é um passo para reduzir gastos e inspirar ações ecológicas na comunidade.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Objetivos -->
+      <section class="mx-auto max-w-6xl px-6 py-16" id="objetivos">
+        <h2 class="flex items-center gap-3 text-3xl font-extrabold text-slate-900">
+          <i aria-hidden="true" class="bx bxs-target text-4xl text-azulMovimento"></i>
+          Objetivos
+        </h2>
+        <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
+            <span class="flex items-center gap-2 text-2xl font-bold text-verdeEnergia">
+              <i aria-hidden="true" class="bx bxs-bolt"></i>
+              Objetivo Geral
+            </span>
+            <p class="mt-3 text-sm text-slate-600">
+              Provar que é possível gerar energia limpa enquanto cuidamos da saúde, usando um espaço de exercícios acessível à escola.
+            </p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
+            <span class="flex items-center gap-2 text-2xl font-bold text-azulMovimento">
+              <i aria-hidden="true" class="bx bxs-graduation"></i>
+              Objetivo Específico
+            </span>
+            <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-600">
+              <li>Demonstrar a transformação da energia cinética em energia elétrica.</li>
+              <li>Usar sensores simples para exibir os resultados ao público.</li>
+            </ul>
+          </article>
+          <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
+            <span class="flex items-center gap-2 text-2xl font-bold text-amareloEnergia">
+              <i aria-hidden="true" class="bx bxs-chat"></i>
+              Objetivo Específico
+            </span>
+            <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-600">
+              <li>Produzir materiais educativos sobre hábitos saudáveis.</li>
+              <li>Registrar depoimentos e ideias da comunidade para melhorias.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <!-- Pesquisa -->
+      <section class="bg-sky-50/80" id="pesquisa">
+        <div class="mx-auto max-w-6xl px-6 py-16 space-y-10">
+          <div class="flex flex-col gap-8 lg:flex-row lg:items-start">
+            <div class="lg:w-2/5 space-y-4">
+              <h2 class="flex items-center gap-3 text-3xl font-extrabold text-slate-900">
+                <i aria-hidden="true" class="bx bxs-bar-chart-alt-2 text-4xl text-azulMovimento"></i>
+                Pesquisa de Campo
+              </h2>
+              <p class="text-lg text-slate-600">
+                Conversamos com moradores do bairro, colegas de escola e familiares para entender como a comunidade vê uma
+                academia que transforma movimento em energia limpa. O resultado foi uma aprovação animadora!
+              </p>
+              <ul class="space-y-3 text-sm text-slate-600">
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-verdeEnergia/15 text-verdeEnergia">
+                    <i aria-hidden="true" class="bx bxs-check-shield text-base"></i>
+                  </span>
+                  Aplicação de questionários na escola, na praça e durante as oficinas abertas.
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-azulMovimento/15 text-azulMovimento">
+                    <i aria-hidden="true" class="bx bxs-flask text-base"></i>
+                  </span>
+                  Maquete conectada aos pedais demonstrou a geração de energia em tempo real.
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-amareloEnergia/15 text-amareloEnergia">
+                    <i aria-hidden="true" class="bx bxs-megaphone text-base"></i>
+                  </span>
+                  Registramos relatos para entender expectativas de uso e apoio da comunidade.
+                </li>
+              </ul>
+            </div>
+            <div class="flex-1">
+              <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
+                <article class="flex h-full flex-col gap-4 rounded-3xl bg-white p-6 shadow-card">
+                  <div class="flex items-center gap-3">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-verdeEnergia/10 text-verdeEnergia">
+                      <i aria-hidden="true" class="bx bxs-like text-2xl"></i>
+                    </div>
+                    <div>
+                      <h3 class="text-base font-bold text-slate-900">Apoio total!</h3>
+                      <p class="text-xs text-slate-500">Moradores aprovam a academia sustentável.</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="rounded-full bg-verdeEnergia px-3 py-1 text-xs font-bold uppercase text-white">100%</span>
+                    <span class="text-xs font-semibold text-verdeEnergia">Apoio da comunidade</span>
+                  </div>
+                  <div class="h-3 w-full rounded-full bg-verdeEnergia/20">
+                    <div class="h-full w-full rounded-full bg-gradient-to-r from-verdeEnergia to-emerald-500"></div>
+                  </div>
+                </article>
+                <article class="flex h-full flex-col gap-4 rounded-3xl bg-white p-6 shadow-card">
+                  <div class="flex items-center gap-3">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-azulMovimento/10 text-azulMovimento">
+                      <i aria-hidden="true" class="bx bxs-city text-2xl"></i>
+                    </div>
+                    <div>
+                      <h3 class="text-base font-bold text-slate-900">Benefícios para todos</h3>
+                      <p class="text-xs text-slate-500">Moradores acreditam no impacto positivo.</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="rounded-full bg-azulMovimento px-3 py-1 text-xs font-bold uppercase text-white">100%</span>
+                    <span class="text-xs font-semibold text-azulMovimento">Bairro iluminado</span>
+                  </div>
+                  <p class="text-sm text-slate-600">
+                    Visão de um bairro mais seguro, iluminado e cheio de energia limpa.
+                  </p>
+                </article>
+                <article class="flex h-full flex-col gap-4 rounded-3xl bg-white p-6 shadow-card">
+                  <div class="flex items-center gap-3">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-amareloEnergia/10 text-amareloEnergia">
+                      <i aria-hidden="true" class="bx bxs-bank text-2xl"></i>
+                    </div>
+                    <div>
+                      <h3 class="text-base font-bold text-slate-900">Prefeitura presente</h3>
+                      <p class="text-xs text-slate-500">Expectativa de apoio oficial ao projeto.</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="rounded-full bg-amareloEnergia px-3 py-1 text-xs font-bold uppercase text-slate-900">100%</span>
+                    <span class="text-xs font-semibold text-amareloEnergia">Solicitação formal</span>
+                  </div>
+                  <div class="h-3 w-full rounded-full bg-amareloEnergia/30">
+                    <div class="h-full w-full rounded-full bg-gradient-to-r from-yellow-300 to-amber-500"></div>
+                  </div>
+                </article>
+                <article class="flex h-full flex-col items-center gap-4 rounded-3xl bg-white p-6 shadow-card">
+                  <h3 class="text-base font-bold text-slate-900">Distância até a academia</h3>
+                  <div
+                    class="flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-br from-white to-slate-50"
+                    role="img"
+                    aria-label="67% não deixam de ir por distância, 33% deixam"
+                  >
+                    <div
+                      class="h-28 w-28 rounded-full border-[10px] border-white"
+                      style="background: conic-gradient(#22c55e 0deg 241.2deg, #0ea5e9 241.2deg 360deg);"
+                    ></div>
+                  </div>
+                  <div class="flex w-full flex-col gap-2 text-xs font-semibold text-slate-600">
+                    <div class="flex items-center gap-2">
+                      <span class="inline-flex h-3 w-3 rounded-full bg-verdeEnergia"></span>
+                      67% não deixam de ir por causa da distância
+                    </div>
+                    <div class="flex items-center gap-2">
+                      <span class="inline-flex h-3 w-3 rounded-full bg-azulMovimento"></span>
+                      33% às vezes deixam de ir
+                    </div>
+                  </div>
+                </article>
+                <article class="flex h-full flex-col gap-4 rounded-3xl bg-white p-6 shadow-card">
+                  <div class="flex items-center gap-3">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-amber-100 text-amareloEnergia">
+                      <i aria-hidden="true" class="bx bxs-bulb text-2xl lamp-pulse"></i>
+                    </div>
+                    <div>
+                      <h3 class="text-base font-bold text-slate-900">Energia do movimento</h3>
+                      <p class="text-xs text-slate-500">Todos acreditam que é possível gerar energia.</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="rounded-full bg-amareloEnergia px-3 py-1 text-xs font-bold uppercase text-slate-900">100%</span>
+                    <span class="text-xs font-semibold text-amareloEnergia">Lâmpadas acesas</span>
+                  </div>
+                  <p class="text-sm text-slate-600">
+                    A maquete demonstrou a transformação da energia cinética na prática.
+                  </p>
+                </article>
+                <article class="flex h-full flex-col gap-4 rounded-3xl bg-white p-6 shadow-card">
+                  <div class="flex items-center gap-3">
+                    <div class="flex h-12 w-12 items-center justify-center rounded-full bg-emerald-100 text-verdeEnergia">
+                      <i aria-hidden="true" class="bx bxs-tree text-2xl"></i>
+                    </div>
+                    <div>
+                      <h3 class="text-base font-bold text-slate-900">Cuidar do nosso espaço</h3>
+                      <p class="text-xs text-slate-500">Moradores zelariam pela academia no bairro.</p>
+                    </div>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <span class="rounded-full bg-verdeEnergia px-3 py-1 text-xs font-bold uppercase text-white">100%</span>
+                    <span class="text-xs font-semibold text-verdeEnergia">Responsabilidade coletiva</span>
+                  </div>
+                  <p class="text-sm text-slate-600">
+                    Proposta vista como oportunidade de união e cuidado com o patrimônio comum.
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Equipe -->
+      <section class="mx-auto max-w-6xl px-6 py-16" id="equipe">
+        <h2 class="flex items-center gap-3 text-3xl font-extrabold text-slate-900">
+          <i aria-hidden="true" class="bx bxs-handshake text-4xl text-verdeEnergia"></i>
+          Equipe Aluna do Projeto
+        </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          Um grupo curioso, criativo e pronto para pedalar por um futuro melhor!
+        </p>
+        <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-emerald-100 text-3xl font-extrabold text-verdeEnergia">
+              A
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Amanayara Cardoso</h3>
+            <p class="mt-2 text-sm text-slate-600">Apresentadora oficial, convida o público a experimentar a academia ecológica.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-sky-100 text-3xl font-extrabold text-azulMovimento">
+              D
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Dalton Alencar</h3>
+            <p class="mt-2 text-sm text-slate-600">Cuida dos contatos com a comunidade e organiza as entrevistas de campo.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-yellow-100 text-3xl font-extrabold text-amareloEnergia">
+              D
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Davi Alencar</h3>
+            <p class="mt-2 text-sm text-slate-600">Registra os dados de geração de energia e transforma números em gráficos divertidos.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-pink-100 text-3xl font-extrabold text-pink-500">
+              E
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Emanuelly de Andrade</h3>
+            <p class="mt-2 text-sm text-slate-600">Elabora as histórias em quadrinhos que explicam o caminho da energia.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-purple-100 text-3xl font-extrabold text-purple-500">
+              E
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Enzo Hort</h3>
+            <p class="mt-2 text-sm text-slate-600">Responsável pelo som e pelos efeitos luminosos da maquete demonstrativa.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-emerald-100 text-3xl font-extrabold text-verdeEnergia">
+              G
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Gabriel Alencar</h3>
+            <p class="mt-2 text-sm text-slate-600">Desenha os esquemas elétricos e ajuda a conectar os pedais ao gerador.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-sky-100 text-3xl font-extrabold text-azulMovimento">
+              H
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Hellóa Christiny Morais</h3>
+            <p class="mt-2 text-sm text-slate-600">Cuida da decoração colorida do estande e monta os murais inspiradores.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-yellow-100 text-3xl font-extrabold text-amareloEnergia">
+              J
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">João Antonio Gomes</h3>
+            <p class="mt-2 text-sm text-slate-600">Recepciona os visitantes e explica como a energia cinética vira eletricidade.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-pink-100 text-3xl font-extrabold text-pink-500">
+              J
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">João Davi Campos</h3>
+            <p class="mt-2 text-sm text-slate-600">Monta experimentos extras e apresenta curiosidades científicas ao público.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-purple-100 text-3xl font-extrabold text-purple-500">
+              K
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Kaio Mendes</h3>
+            <p class="mt-2 text-sm text-slate-600">Ajuda na manutenção das bicicletas e garante que tudo esteja pronto para pedalar.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-emerald-100 text-3xl font-extrabold text-verdeEnergia">
+              L
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Lucas Santos</h3>
+            <p class="mt-2 text-sm text-slate-600">Produz vídeos curtos para as redes sociais e registra momentos da feira.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-sky-100 text-3xl font-extrabold text-azulMovimento">
+              L
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Luis Fernando Saraiva</h3>
+            <p class="mt-2 text-sm text-slate-600">Organiza os formulários de pesquisa e tabula as respostas da comunidade.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-yellow-100 text-3xl font-extrabold text-amareloEnergia">
+              L
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Luiz Otavio Silvestre</h3>
+            <p class="mt-2 text-sm text-slate-600">Cria infográficos e banners que mostram o impacto sustentável do projeto.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-pink-100 text-3xl font-extrabold text-pink-500">
+              L
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Luna Morais</h3>
+            <p class="mt-2 text-sm text-slate-600">Responsável pela trilha sonora animada e pelos convites para pedalar.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-purple-100 text-3xl font-extrabold text-purple-500">
+              M
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Maria Alicia Martins</h3>
+            <p class="mt-2 text-sm text-slate-600">Coordena a agenda da equipe e garante que todos participem das oficinas.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-emerald-100 text-3xl font-extrabold text-verdeEnergia">
+              M
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Maria Elloa Brito</h3>
+            <p class="mt-2 text-sm text-slate-600">Faz a ponte com os professores e organiza as falas de agradecimento.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-sky-100 text-3xl font-extrabold text-azulMovimento">
+              N
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Nayla Pereira</h3>
+            <p class="mt-2 text-sm text-slate-600">Cuida da timeline do painel digital e informa a produção de energia ao vivo.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-yellow-100 text-3xl font-extrabold text-amareloEnergia">
+              N
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Nelson Otavio Alencar</h3>
+            <p class="mt-2 text-sm text-slate-600">Apresenta o protótipo da bicicleta geradora e explica os componentes elétricos.</p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
+            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-pink-100 text-3xl font-extrabold text-pink-500">
+              S
+            </div>
+            <h3 class="mt-4 text-xl font-bold text-slate-900">Swyanne Alves</h3>
+            <p class="mt-2 text-sm text-slate-600">Registra depoimentos do público e produz relatos para o relatório final.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section class="bg-white" id="contato">
+        <div class="mx-auto max-w-5xl px-6 py-16">
+          <div class="rounded-3xl bg-emerald-50/70 p-10 shadow-card">
+            <h2 class="flex items-center gap-3 text-3xl font-extrabold text-slate-900">
+              <i aria-hidden="true" class="bx bxs-envelope text-4xl text-azulMovimento"></i>
+              Contato & Referências
+            </h2>
+            <p class="mt-4 text-lg text-slate-600">
+              Gostou do projeto? Vamos conversar, trocar ideias e fazer essa academia ecológica chegar ainda mais longe!
+            </p>
+            <div class="mt-6 grid gap-6 md:grid-cols-2">
+              <div class="rounded-3xl bg-white p-6 shadow-sm">
+                <h3 class="text-lg font-bold text-slate-900">Fale com a equipe</h3>
+                <p class="mt-3 text-sm text-slate-600">
+                  <strong class="font-semibold text-verdeEnergia">E-mail:</strong>
+                  <a class="text-azulMovimento underline underline-offset-4" href="mailto:energia.movimento@escola.com">
+                    energia.movimento@escola.com
+                  </a>
+                </p>
+                <p class="mt-3 text-sm text-slate-600">
+                  <strong class="font-semibold text-verdeEnergia">Instagram:</strong>
+                  <span>@energia.movimento</span>
+                </p>
+              </div>
+              <div class="rounded-3xl bg-white p-6 shadow-sm">
+                <h3 class="text-lg font-bold text-slate-900">Fontes de estudo</h3>
+                <ul class="mt-3 space-y-2 text-sm text-slate-600">
+                  <li>
+                    <a
+                      class="text-azulMovimento underline underline-offset-4"
+                      href="https://www.ecycle.com.br/energia-cinetica/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Energia cinética na prática
+                    </a>
+                  </li>
+                  <li>
+                    <a
+                      class="text-azulMovimento underline underline-offset-4"
+                      href="https://www.ecycle.com.br/energia-renovavel/"
+                      target="_blank"
+                      rel="noopener"
+                    >
+                      Guia de energias renováveis
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <p class="mt-6 text-center text-sm font-semibold text-slate-600">
+              “Sustentabilidade é o movimento que muda o mundo.” — Equipe Energia em Movimento
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-900 py-6">
+      <p class="flex items-center justify-center gap-2 text-center text-sm font-semibold text-white">
+        Energia em Movimento — Feira de Ciências | Feito com
+        <i aria-hidden="true" class="bx bxs-bolt text-lg text-amareloEnergia"></i>
+        por jovens cientistas.
+      </p>
+    </footer>
+
+    <script>
+      const counters = document.querySelectorAll(".counter");
+      const options = {
+        threshold: 0.4,
+      };
+
+      const runCounter = (entry) => {
+        const el = entry.target;
+        const target = Number(el.dataset.target);
+        let current = 0;
+        const increment = Math.ceil(target / 60); // simples e leve
+        const interval = setInterval(() => {
+          current += increment;
+          if (current >= target) {
+            el.textContent = target + "%";
+            clearInterval(interval);
+          } else {
+            el.textContent = current + "%";
+          }
+        }, 30);
+      };
+
+      const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            runCounter(entry);
+            obs.unobserve(entry.target);
+          }
+        });
+      }, options);
+
+      counters.forEach((counter) => observer.observe(counter));
+    </script>
+  </body>
+</html>
