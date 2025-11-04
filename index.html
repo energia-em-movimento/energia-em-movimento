@@ -40,37 +40,25 @@
       * {
         box-sizing: border-box;
         scroll-behavior: smooth;
-        
       }
       .floating-badge {
         animation: badgeBounce 4s ease-in-out infinite;
       }
-
       .floating-badge:nth-child(2) {
         animation-delay: 1s;
       }
-
       .floating-badge:nth-child(3) {
         animation-delay: 2s;
       }
-
       @keyframes badgeBounce {
-        0%,
-        100% {
-          transform: translateY(0);
-        }
-        50% {
-          transform: translateY(-10px);
-        }
+        0%, 100% { transform: translateY(0); }
+        50% { transform: translateY(-10px); }
       }
-
       .lamp-pulse {
         animation: lampPulse 2s ease-in-out infinite;
       }
-
       @keyframes lampPulse {
-        0%,
-        100% {
+        0%, 100% {
           transform: scale(0.92);
           filter: drop-shadow(0 0 0 rgba(250, 204, 21, 0.25));
         }
@@ -93,6 +81,7 @@
           <a class="transition hover:text-azulMovimento" href="#inicio">Início</a>
           <a class="transition hover:text-azulMovimento" href="#projeto">O Projeto</a>
           <a class="transition hover:text-azulMovimento" href="#objetivos">Objetivos</a>
+          <a class="transition hover:text-azulMovimento" href="#metodologia">Metodologia</a>
           <a class="transition hover:text-azulMovimento" href="#pesquisa">Pesquisa</a>
           <a class="transition hover:text-azulMovimento" href="#equipe">Equipe</a>
           <a class="transition hover:text-azulMovimento" href="#contato">Contato</a>
@@ -113,7 +102,7 @@
           <div class="flex-1 space-y-6">
             <span class="inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 text-sm font-semibold text-azulMovimento shadow-sm">
               <i aria-hidden="true" class="bx bxs-leaf text-lg text-verdeEnergia"></i>
-              Projeto escolar • Feira de Ciências
+              Projeto escolar • Sustentabilidade
             </span>
             <h1 class="text-4xl font-extrabold text-slate-900 sm:text-5xl">
               Energia em Movimento
@@ -122,7 +111,7 @@
               Sustentabilidade e saúde em um só ritmo.
             </p>
             <p class="text-lg text-slate-600">
-              Nosso desafio é transformar o movimento das pessoas em energia elétrica limpa por meio de uma academia ecológica. Um jeito divertido de unir corpo, tecnologia e planeta!
+              Projeto que mostra, na prática, que é possível cuidar do corpo e do planeta ao mesmo tempo, usando academias ecológicas que transformam o movimento das pessoas em energia elétrica para iluminar espaços públicos. 
             </p>
             <div class="flex flex-wrap gap-3">
               <a
@@ -141,15 +130,15 @@
             <div class="flex flex-wrap items-center gap-3 pt-4 text-sm font-semibold text-slate-700">
               <span class="floating-badge inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-sm">
                 <i aria-hidden="true" class="bx bxs-bulb text-lg text-amareloEnergia"></i>
-                Energia limpa gerada com pedais
+                Geração de energia limpa
               </span>
               <span class="floating-badge inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-sm">
                 <i aria-hidden="true" class="bx bx-dumbbell text-lg text-azulMovimento"></i>
-                Movimento faz bem para o corpo
+                Incentivo à atividade física
               </span>
               <span class="floating-badge inline-flex items-center gap-2 rounded-full bg-white px-4 py-2 shadow-sm">
                 <i aria-hidden="true" class="bx bxs-group text-lg text-verdeEnergia"></i>
-                Comunidade aprovou a ideia
+                Comunidade aprovou
               </span>
             </div>
           </div>
@@ -157,12 +146,13 @@
             <div class="relative mx-auto max-w-md rounded-[36px] bg-white/90 p-6 shadow-suave">
               <div class="absolute -top-8 right-10 flex items-center gap-2 rounded-full bg-amareloEnergia px-4 py-2 text-sm font-bold text-slate-800 shadow">
                 <i aria-hidden="true" class="bx bxs-cog text-base"></i>
-                Energia + Saúde
+                Movimento → Energia
               </div>
               <div class="absolute -bottom-6 left-6 flex items-center gap-2 rounded-full bg-verdeEnergia px-4 py-2 text-sm font-bold text-white shadow">
                 <i aria-hidden="true" class="bx bxs-battery-charging text-base"></i>
-                Recarga sustentável
+                Espaço iluminado
               </div>
+              <!-- Ilustração -->
               <svg
                 class="w-full"
                 viewBox="0 0 320 240"
@@ -171,7 +161,7 @@
               >
                 <title id="illusTitle">Ilustração infantil de academia ecológica</title>
                 <desc id="illusDesc">
-                  Crianças pedalando bicicletas conectadas a um gerador que acende uma lâmpada e carrega equipamentos.
+                  Crianças se exercitando em aparelhos conectados a um sistema que acende uma lâmpada.
                 </desc>
                 <defs>
                   <linearGradient id="bgGradient" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -181,35 +171,7 @@
                 </defs>
                 <rect width="320" height="240" rx="28" fill="url(#bgGradient)"></rect>
                 <path d="M30 180 Q160 140 290 180" fill="#dcfce7" />
-                <g transform="translate(60,80)">
-                  <rect x="0" y="84" width="60" height="10" rx="5" fill="#22c55e" />
-                  <rect x="140" y="84" width="60" height="10" rx="5" fill="#0ea5e9" />
-                  <circle cx="16" cy="84" r="16" fill="#0ea5e9" />
-                  <circle cx="44" cy="84" r="16" fill="#facc15" />
-                  <circle cx="156" cy="84" r="16" fill="#facc15" />
-                  <circle cx="184" cy="84" r="16" fill="#22c55e" />
-                  <rect x="72" y="10" width="56" height="60" rx="18" fill="#facc15" />
-                  <rect x="94" y="-10" width="12" height="20" rx="6" fill="#facc15" />
-                  <circle cx="100" cy="40" r="20" fill="#fef3c7" />
-                  <path d="M100 60 L110 100" stroke="#0ea5e9" stroke-width="6" stroke-linecap="round" />
-                  <path d="M100 60 L80 100" stroke="#22c55e" stroke-width="6" stroke-linecap="round" />
-                  <path d="M100 60 L140 40" stroke="#0f172a" stroke-width="6" stroke-linecap="round" />
-                  <path d="M100 22 L120 -10" stroke="#22c55e" stroke-width="6" stroke-linecap="round" />
-                </g>
-                <g transform="translate(40,60)">
-                  <rect x="0" y="0" width="48" height="48" rx="24" fill="#22c55e" />
-                  <path d="M20 12 L28 12 L24 22 H32 L18 44 L22 32 H14 Z" fill="#fef9c3" />
-                </g>
-                <g transform="translate(220,40)">
-                  <rect x="0" y="0" width="60" height="36" rx="12" fill="#0284c7" />
-                  <rect x="10" y="12" width="40" height="12" rx="6" fill="#e0f2fe" />
-                </g>
-                <g transform="translate(220,92)">
-                  <rect x="0" y="0" width="60" height="80" rx="16" fill="#bae6fd" />
-                  <rect x="14" y="18" width="32" height="44" rx="12" fill="#0ea5e9" />
-                  <circle cx="10" cy="10" r="6" fill="#22c55e" />
-                  <circle cx="50" cy="10" r="6" fill="#facc15" />
-                </g>
+                <!-- Só decorativo -->
               </svg>
             </div>
           </div>
@@ -225,117 +187,61 @@
               O Projeto
             </h2>
             <p class="mt-4 text-lg text-slate-600">
-              “Energia em Movimento” é uma academia ecológica escolar. Ao pedalar, as pessoas produzem energia cinética que é convertida em eletricidade para acender lâmpadas, carregar dispositivos e alimentar a maquete do projeto.
+              A nossa turma pensou: e se a gente pudesse fazer exercício e ao mesmo tempo ajudar o meio ambiente? Daí nasceu o “Energia em Movimento”: uma academia ecológica que transforma o movimento do corpo em energia elétrica
+              <span aria-hidden="true" class="inline-flex items-center gap-1 text-azulMovimento align-middle">
+                <i class="bx bxs-bulb"></i>
+                <i class="bx bx-dumbbell"></i>
+              </span>
+              .
             </p>
             <p class="mt-4 text-lg text-slate-600">
-              Com linguagem simples e divertida, mostramos que a saúde do corpo pode caminhar junto com a saúde do planeta. Além do protótipo funcional, elaboramos materiais educativos para toda a comunidade escolar.
+              A gente percebeu que hoje se fala muito de cuidar do planeta, mas nem todo mundo sabe como fazer isso no dia a dia. Por isso, tivemos a ideia de criar uma academia ao ar livre que, enquanto a pessoa se exercita, já vai gerando energia limpa para iluminar o espaço. Assim dá pra cuidar da saúde e do meio ambiente ao mesmo tempo.
+            </p>
+            <p class="mt-4 text-lg text-slate-600">
+              Os aparelhos seriam adaptados para pegar a energia do movimento (energia cinética) e transformar em energia elétrica, como a gente estudou no projeto. É uma forma simples de mostrar que pequenas ações viram grandes mudanças.
+            </p>
+            <p class="mt-4 text-lg text-slate-600">
+              Nosso objetivo principal é mostrar que dá, sim, pra gerar energia limpa só com o movimento do corpo, e ainda incentivar as pessoas a fazer exercício e cuidar da saúde
+              <span aria-hidden="true" class="inline-flex items-center gap-1 text-verdeEnergia align-middle">
+                <i class="bx bxs-heart"></i>
+              </span>
+              .
             </p>
           </div>
           <div class="grid flex-1 gap-6 sm:grid-cols-2">
             <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-lg">
               <i aria-hidden="true" class="bx bxs-cog text-3xl text-azulMovimento"></i>
-              <h3 class="mt-4 text-xl font-bold text-slate-900">Tecnologia Pedal Power</h3>
+              <h3 class="mt-4 text-xl font-bold text-slate-900">Equipamentos adaptados</h3>
               <p class="mt-2 text-sm text-slate-600">
-                Bicicletas conectadas a geradores convertem o movimento em energia elétrica. Visores mostram a produção em tempo real.
+                Aparelhos de ginástica são pensados para captar o esforço físico e encaminhar a energia para o sistema. 
               </p>
             </article>
             <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-lg">
               <i aria-hidden="true" class="bx bxs-leaf text-3xl text-verdeEnergia"></i>
-              <h3 class="mt-4 text-xl font-bold text-slate-900">Maquete sustentável</h3>
+              <h3 class="mt-4 text-xl font-bold text-slate-900">Uso em espaços públicos</h3>
               <p class="mt-2 text-sm text-slate-600">
-                A maquete interativa demonstra a energia percorrendo fios até acender pequenas lâmpadas e carregar um painel educativo.
+                A energia pode ser usada para iluminar praças e áreas de convivência, tornando o ambiente mais seguro. 
               </p>
             </article>
             <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-lg">
               <i aria-hidden="true" class="bx bxs-book-heart text-3xl text-amareloEnergia"></i>
-              <h3 class="mt-4 text-xl font-bold text-slate-900">Material didático</h3>
+              <h3 class="mt-4 text-xl font-bold text-slate-900">Educação ambiental</h3>
               <p class="mt-2 text-sm text-slate-600">
-                Cartazes, infográficos e vídeos curtos explicam o passo a passo da geração de energia de forma divertida.
+                O projeto mostra, na prática, que sustentabilidade não é algo distante e que a comunidade pode participar. 
               </p>
             </article>
             <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1 hover:shadow-lg">
               <i aria-hidden="true" class="bx bxs-happy-heart-eyes text-3xl text-rose-400"></i>
-              <h3 class="mt-4 text-xl font-bold text-slate-900">Aprovação da comunidade</h3>
+              <h3 class="mt-4 text-xl font-bold text-slate-900">Aprovação social</h3>
               <p class="mt-2 text-sm text-slate-600">
-                Oficinas abertas e questionários mostraram que moradores e estudantes apoiam a ideia e querem participar.
+                A pesquisa mostrou apoio total dos moradores à ideia da academia ecológica. 
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <!-- Galeria da Maquete -->
-      <section class="bg-white" id="galeria">
-        <div class="mx-auto max-w-6xl px-6 py-16">
-          <div class="space-y-4">
-            <h2 class="flex items-center gap-3 text-3xl font-extrabold text-slate-900">
-              <i aria-hidden="true" class="bx bxs-camera text-4xl text-azulMovimento"></i>
-              Momentos da Maquete em Ação
-            </h2>
-            <p class="max-w-3xl text-lg text-slate-600">
-              Reserve estes espaços para inserir fotos reais da equipe construindo e testando a maquete.
-              Substitua cada bloco pela imagem correspondente assim que elas estiverem prontas.
-            </p>
-          </div>
-          <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-            <figure class="group rounded-3xl bg-white p-5 shadow-card">
-              <div
-                class="flex aspect-video w-full items-center justify-center rounded-2xl border-2 border-dashed border-azulMovimento/40 bg-sky-50/60 text-center text-sm text-slate-500 transition group-hover:border-azulMovimento group-hover:bg-sky-100/70"
-              >
-                <span class="max-w-[200px] leading-relaxed">
-                  <strong class="block text-sm font-semibold text-azulMovimento">Foto 1 — Montagem</strong>
-                  Adicione aqui a foto dos estudantes montando a base da maquete.
-                </span>
-              </div>
-              <figcaption class="mt-4 text-sm font-semibold text-slate-700">
-                Montagem da estrutura com bicicletas e geradores.
-              </figcaption>
-            </figure>
-            <figure class="group rounded-3xl bg-white p-5 shadow-card">
-              <div
-                class="flex aspect-video w-full items-center justify-center rounded-2xl border-2 border-dashed border-verdeEnergia/40 bg-emerald-50/60 text-center text-sm text-slate-500 transition group-hover:border-verdeEnergia group-hover:bg-emerald-100/70"
-              >
-                <span class="max-w-[200px] leading-relaxed">
-                  <strong class="block text-sm font-semibold text-verdeEnergia">Foto 2 — Testes</strong>
-                  Insira a imagem dos testes de pedal para gerar energia.
-                </span>
-              </div>
-              <figcaption class="mt-4 text-sm font-semibold text-slate-700">
-                Testando a produção de energia com os pedais ecológicos.
-              </figcaption>
-            </figure>
-            <figure class="group rounded-3xl bg-white p-5 shadow-card">
-              <div
-                class="flex aspect-video w-full items-center justify-center rounded-2xl border-2 border-dashed border-amareloEnergia/40 bg-yellow-50/60 text-center text-sm text-slate-500 transition group-hover:border-amareloEnergia group-hover:bg-yellow-100/70"
-              >
-                <span class="max-w-[200px] leading-relaxed">
-                  <strong class="block text-sm font-semibold text-amareloEnergia">Foto 3 — Apresentação</strong>
-                  Coloque a foto da equipe apresentando a maquete na feira.
-                </span>
-              </div>
-              <figcaption class="mt-4 text-sm font-semibold text-slate-700">
-                Equipe mostrando o funcionamento para o público visitante.
-              </figcaption>
-            </figure>
-            <figure class="group rounded-3xl bg-white p-5 shadow-card sm:col-span-2 lg:col-span-3">
-              <div
-                class="flex aspect-[16/5] w-full items-center justify-center rounded-2xl border-2 border-dashed border-slate-300 bg-slate-50 text-center text-sm text-slate-500 transition group-hover:border-slate-400 group-hover:bg-slate-100"
-              >
-                <span class="max-w-xl leading-relaxed">
-                  <strong class="block text-sm font-semibold text-slate-700">Foto panorâmica — Equipe completa</strong>
-                  Use este espaço para uma foto panorâmica dos alunos trabalhando juntos na maquete. Ideal para
-                  destacar o espírito de equipe e o estande montado.
-                </span>
-              </div>
-              <figcaption class="mt-4 text-sm font-semibold text-slate-700">
-                Registro coletivo da equipe Energia em Movimento na montagem final.
-              </figcaption>
-            </figure>
-          </div>
-        </div>
-      </section>
-
-      <!-- Importância -->
+      <!-- Importância / Relevância -->
       <section class="bg-emerald-50/60" id="importancia">
         <div class="mx-auto flex max-w-6xl flex-col gap-8 px-6 py-16 lg:flex-row lg:items-center">
           <div class="lg:w-1/3">
@@ -344,26 +250,26 @@
               Por que é importante?
             </h2>
             <p class="mt-4 text-lg text-slate-600">
-              Em cada pedalada, unimos saúde, tecnologia e a missão de cuidar do planeta. O projeto desperta hábitos saudáveis e ainda reduz o consumo de energia tradicional.
+              O projeto valoriza a criação de academias sustentáveis, incentiva a prática de exercícios e reforça o uso de energias alternativas nos espaços públicos. Promove saúde, bem-estar e consciência ambiental ao mesmo tempo. 
             </p>
           </div>
           <div class="grid flex-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
               <h3 class="flex items-center gap-2 text-lg font-bold text-slate-900">
                 <i aria-hidden="true" class="bx bxs-first-aid text-xl text-verdeEnergia"></i>
-                Saúde
+                Saúde e movimento
               </h3>
               <p class="mt-3 text-sm text-slate-600">
-                Crianças e jovens se movimentam mais, aprendendo que exercício faz bem para o corpo e para a mente.
+                Combate ao sedentarismo e incentivo a atividades físicas para todas as idades. 
               </p>
             </article>
             <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
               <h3 class="flex items-center gap-2 text-lg font-bold text-slate-900">
                 <i aria-hidden="true" class="bx bx-chip text-xl text-azulMovimento"></i>
-                Tecnologia
+                Tecnologia aplicada
               </h3>
               <p class="mt-3 text-sm text-slate-600">
-                Mostramos na prática como converter energia cinética em energia elétrica — um conceito científico em ação!
+                Mostra como a energia do corpo pode virar energia elétrica por meio de sistemas de conversão. 
               </p>
             </article>
             <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
@@ -372,7 +278,7 @@
                 Sustentabilidade
               </h3>
               <p class="mt-3 text-sm text-slate-600">
-                Cada watt gerado pelos pedais é um passo para reduzir gastos e inspirar ações ecológicas na comunidade.
+                Demonstra, na prática, que pequenas ações podem contribuir para cidades mais sustentáveis. 
               </p>
             </article>
           </div>
@@ -383,38 +289,101 @@
       <section class="mx-auto max-w-6xl px-6 py-16" id="objetivos">
         <h2 class="flex items-center gap-3 text-3xl font-extrabold text-slate-900">
           <i aria-hidden="true" class="bx bxs-target text-4xl text-azulMovimento"></i>
-          Objetivos
+          Objetivos do Projeto
         </h2>
+        <p class="mt-4 text-lg text-slate-600">
+          O projeto busca incentivar as pessoas a cuidarem de sua própria saúde enquanto contribuem para a preservação do meio ambiente, mostrando que é possível gerar energia limpa apenas com o movimento do corpo. 
+        </p>
         <div class="mt-10 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <!-- Objetivo Geral -->
           <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
             <span class="flex items-center gap-2 text-2xl font-bold text-verdeEnergia">
               <i aria-hidden="true" class="bx bxs-bolt"></i>
               Objetivo Geral
             </span>
             <p class="mt-3 text-sm text-slate-600">
-              Provar que é possível gerar energia limpa enquanto cuidamos da saúde, usando um espaço de exercícios acessível à escola.
+              Mostrar que dá para gerar energia limpa só com o movimento do corpo e, ao mesmo tempo, incentivar hábitos saudáveis na comunidade
+              <span aria-hidden="true" class="inline-flex items-center gap-1 text-verdeEnergia align-middle">
+                <i class="bx bxs-heart"></i>
+              </span>
+              .
+            </p>
+          </article>
+          <!-- Objetivos específicos -->
+          <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
+            <h3 class="text-base font-bold text-slate-900">1. Equipamentos de ginástica</h3>
+            <p class="mt-3 text-sm text-slate-600">
+              Montar aparelhos de ginástica que consigam captar a energia do nosso movimento, mostrando como a academia ecológica pode funcionar. 
             </p>
           </article>
           <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
-            <span class="flex items-center gap-2 text-2xl font-bold text-azulMovimento">
-              <i aria-hidden="true" class="bx bxs-graduation"></i>
-              Objetivo Específico
-            </span>
-            <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-600">
-              <li>Demonstrar a transformação da energia cinética em energia elétrica.</li>
-              <li>Usar sensores simples para exibir os resultados ao público.</li>
-            </ul>
+            <h3 class="text-base font-bold text-slate-900">2. Conversão da energia</h3>
+            <p class="mt-3 text-sm text-slate-600">
+              Transformar essa energia em energia elétrica de um jeito seguro para iluminar o espaço público e carregar equipamentos. 
+            </p>
           </article>
           <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
-            <span class="flex items-center gap-2 text-2xl font-bold text-amareloEnergia">
-              <i aria-hidden="true" class="bx bxs-chat"></i>
-              Objetivo Específico
-            </span>
-            <ul class="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-600">
-              <li>Produzir materiais educativos sobre hábitos saudáveis.</li>
-              <li>Registrar depoimentos e ideias da comunidade para melhorias.</li>
-            </ul>
+            <h3 class="text-base font-bold text-slate-900">3. Incentivo ao exercício</h3>
+            <p class="mt-3 text-sm text-slate-600">
+              Fazer a galera se animar para usar a academia e sair do sedentarismo, cuidando da saúde enquanto gera energia. 
+            </p>
           </article>
+          <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
+            <h3 class="text-base font-bold text-slate-900">4. Tecnologia + saúde + sustentabilidade</h3>
+            <p class="mt-3 text-sm text-slate-600">
+              Demonstrar na prática que é possível unir essas três dimensões em um mesmo projeto. 
+            </p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
+            <h3 class="text-base font-bold text-slate-900">5. Iluminar o espaço público</h3>
+            <p class="mt-3 text-sm text-slate-600">
+              Utilizar a energia produzida para acender o local onde a academia estiver instalada. 
+            </p>
+          </article>
+          <article class="rounded-3xl bg-white p-6 shadow-card transition hover:-translate-y-1">
+            <h3 class="text-base font-bold text-slate-900">6. Mostrar a viabilidade</h3>
+            <p class="mt-3 text-sm text-slate-600">
+              Comprovar que é possível gerar energia elétrica a partir do movimento humano. 
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- Metodologia / Linha do tempo -->
+      <section class="mx-auto max-w-6xl px-6 py-16" id="metodologia">
+        <div class="flex flex-col gap-8 lg:flex-row lg:items-start">
+          <div class="lg:w-2/5">
+            <h2 class="flex items-center gap-3 text-3xl font-extrabold text-slate-900">
+              <i aria-hidden="true" class="bx bxs-timer text-4xl text-azulMovimento"></i>
+              Metodologia
+            </h2>
+            <p class="mt-4 text-lg text-slate-600">
+              Para entender se a comunidade apoiaria a proposta, foi realizada uma pesquisa de campo com moradores, por meio de um questionário com seis perguntas sobre sustentabilidade e sobre a academia ecológica. Depois, a equipe construiu uma maquete para demonstrar o funcionamento. 
+            </p>
+          </div>
+          <div class="flex-1 space-y-6">
+            <div class="relative border-l-2 border-azulMovimento/40 pl-8">
+              <div class="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-azulMovimento"></div>
+              <h3 class="text-lg font-bold text-slate-900">Primeiro encontro — 17 de outubro</h3>
+              <p class="text-sm text-slate-600">
+                Aplicação dos questionários com 36 moradores para medir o conhecimento sobre sustentabilidade e o interesse na academia. 
+              </p>
+            </div>
+            <div class="relative border-l-2 border-azulMovimento/40 pl-8">
+              <div class="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-verdeEnergia"></div>
+              <h3 class="text-lg font-bold text-slate-900">Construção da maquete</h3>
+              <p class="text-sm text-slate-600">
+                A maquete mostra a academia ecológica e como a energia do movimento é transformada em energia elétrica. 
+              </p>
+            </div>
+            <div class="relative border-l-2 border-azulMovimento/40 pl-8">
+              <div class="absolute -left-[9px] top-0 h-4 w-4 rounded-full bg-amareloEnergia"></div>
+              <h3 class="text-lg font-bold text-slate-900">Último encontro</h3>
+              <p class="text-sm text-slate-600">
+                Organização dos dados coletados, montagem do gráfico de barras e preparação da apresentação para a feira. 
+              </p>
+            </div>
+          </div>
         </div>
       </section>
 
@@ -428,29 +397,18 @@
                 Pesquisa de Campo
               </h2>
               <p class="text-lg text-slate-600">
-                Conversamos com moradores do bairro, colegas de escola e familiares para entender como a comunidade vê uma
-                academia que transforma movimento em energia limpa. O resultado foi uma aprovação animadora!
+                Pra saber se o pessoal ia gostar da ideia, a gente foi na rua e aplicou um questionário com 36 moradores no dia 17 de outubro. Perguntamos se eles usariam uma academia sustentável e se achavam que a prefeitura deveria construir uma. Depois, montamos a maquete mostrando como a energia ia ser gerada e usada.
               </p>
-              <ul class="space-y-3 text-sm text-slate-600">
-                <li class="flex items-start gap-3">
-                  <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-verdeEnergia/15 text-verdeEnergia">
-                    <i aria-hidden="true" class="bx bxs-check-shield text-base"></i>
-                  </span>
-                  Aplicação de questionários na escola, na praça e durante as oficinas abertas.
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-azulMovimento/15 text-azulMovimento">
-                    <i aria-hidden="true" class="bx bxs-flask text-base"></i>
-                  </span>
-                  Maquete conectada aos pedais demonstrou a geração de energia em tempo real.
-                </li>
-                <li class="flex items-start gap-3">
-                  <span class="mt-1 inline-flex h-6 w-6 items-center justify-center rounded-full bg-amareloEnergia/15 text-amareloEnergia">
-                    <i aria-hidden="true" class="bx bxs-megaphone text-base"></i>
-                  </span>
-                  Registramos relatos para entender expectativas de uso e apoio da comunidade.
-                </li>
-              </ul>
+              <p class="text-lg text-slate-600">
+                A parte mais massa é que todo mundo aprovou a proposta
+                <span aria-hidden="true" class="inline-flex items-center gap-1 text-azulMovimento align-middle">
+                  <i class="bx bxs-star"></i>
+                </span>
+                . Dos 36 moradores, 100% disseram que a academia faz bem pro bairro e que a prefeitura precisa apoiar. A única divisão ficou na distância: 67% iriam mesmo assim e 33% falaram que às vezes não dá para ir.
+              </p>
+              <p class="text-lg text-slate-600">
+                A gente não queria fazer só uma maquete bonita; queria provar que dá pra ter espaços públicos iluminados, seguros e sustentáveis e que todo mundo pode ajudar a cuidar.
+              </p>
             </div>
             <div class="flex-1">
               <div class="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
@@ -466,7 +424,7 @@
                   </div>
                   <div class="flex items-center gap-3">
                     <span class="rounded-full bg-verdeEnergia px-3 py-1 text-xs font-bold uppercase text-white">100%</span>
-                    <span class="text-xs font-semibold text-verdeEnergia">Apoio da comunidade</span>
+                    <span class="text-xs font-semibold text-verdeEnergia">Apoiam a ideia</span>
                   </div>
                   <div class="h-3 w-full rounded-full bg-verdeEnergia/20">
                     <div class="h-full w-full rounded-full bg-gradient-to-r from-verdeEnergia to-emerald-500"></div>
@@ -479,15 +437,15 @@
                     </div>
                     <div>
                       <h3 class="text-base font-bold text-slate-900">Benefícios para todos</h3>
-                      <p class="text-xs text-slate-500">Moradores acreditam no impacto positivo.</p>
+                      <p class="text-xs text-slate-500">Bairro iluminado e mais segurança.</p>
                     </div>
                   </div>
                   <div class="flex items-center gap-3">
                     <span class="rounded-full bg-azulMovimento px-3 py-1 text-xs font-bold uppercase text-white">100%</span>
-                    <span class="text-xs font-semibold text-azulMovimento">Bairro iluminado</span>
+                    <span class="text-xs font-semibold text-azulMovimento">Veem vantagens</span>
                   </div>
                   <p class="text-sm text-slate-600">
-                    Visão de um bairro mais seguro, iluminado e cheio de energia limpa.
+                    Todos acreditam que a academia sustentável melhora o bairro e inspira novas ações. 
                   </p>
                 </article>
                 <article class="flex h-full flex-col gap-4 rounded-3xl bg-white p-6 shadow-card">
@@ -497,12 +455,12 @@
                     </div>
                     <div>
                       <h3 class="text-base font-bold text-slate-900">Prefeitura presente</h3>
-                      <p class="text-xs text-slate-500">Expectativa de apoio oficial ao projeto.</p>
+                      <p class="text-xs text-slate-500">Expectativa de apoio oficial.</p>
                     </div>
                   </div>
                   <div class="flex items-center gap-3">
                     <span class="rounded-full bg-amareloEnergia px-3 py-1 text-xs font-bold uppercase text-slate-900">100%</span>
-                    <span class="text-xs font-semibold text-amareloEnergia">Solicitação formal</span>
+                    <span class="text-xs font-semibold text-amareloEnergia">Querem parceria pública</span>
                   </div>
                   <div class="h-3 w-full rounded-full bg-amareloEnergia/30">
                     <div class="h-full w-full rounded-full bg-gradient-to-r from-yellow-300 to-amber-500"></div>
@@ -513,7 +471,7 @@
                   <div
                     class="flex h-32 w-32 items-center justify-center rounded-full bg-gradient-to-br from-white to-slate-50"
                     role="img"
-                    aria-label="67% não deixam de ir por distância, 33% deixam"
+                    aria-label="67% iriam mesmo com distância, 33% dizem que às vezes não dá"
                   >
                     <div
                       class="h-28 w-28 rounded-full border-[10px] border-white"
@@ -523,11 +481,11 @@
                   <div class="flex w-full flex-col gap-2 text-xs font-semibold text-slate-600">
                     <div class="flex items-center gap-2">
                       <span class="inline-flex h-3 w-3 rounded-full bg-verdeEnergia"></span>
-                      67% não deixam de ir por causa da distância
+                      67% iriam mesmo com distância
                     </div>
                     <div class="flex items-center gap-2">
                       <span class="inline-flex h-3 w-3 rounded-full bg-azulMovimento"></span>
-                      33% às vezes deixam de ir
+                      33% dizem que às vezes não dá pra ir
                     </div>
                   </div>
                 </article>
@@ -537,8 +495,8 @@
                       <i aria-hidden="true" class="bx bxs-bulb text-2xl lamp-pulse"></i>
                     </div>
                     <div>
-                      <h3 class="text-base font-bold text-slate-900">Energia do movimento</h3>
-                      <p class="text-xs text-slate-500">Todos acreditam que é possível gerar energia.</p>
+                      <h3 class="text-base font-bold text-slate-900">É possível gerar energia?</h3>
+                      <p class="text-xs text-slate-500">Todos acreditam que sim</p>
                     </div>
                   </div>
                   <div class="flex items-center gap-3">
@@ -546,7 +504,7 @@
                     <span class="text-xs font-semibold text-amareloEnergia">Lâmpadas acesas</span>
                   </div>
                   <p class="text-sm text-slate-600">
-                    A maquete demonstrou a transformação da energia cinética na prática.
+                    Todos acreditam que o movimento humano consegue iluminar o espaço por meio da academia ecológica. 
                   </p>
                 </article>
                 <article class="flex h-full flex-col gap-4 rounded-3xl bg-white p-6 shadow-card">
@@ -556,15 +514,15 @@
                     </div>
                     <div>
                       <h3 class="text-base font-bold text-slate-900">Cuidar do nosso espaço</h3>
-                      <p class="text-xs text-slate-500">Moradores zelariam pela academia no bairro.</p>
+                      <p class="text-xs text-slate-500">Responsabilidade compartilhada.</p>
                     </div>
                   </div>
                   <div class="flex items-center gap-3">
                     <span class="rounded-full bg-verdeEnergia px-3 py-1 text-xs font-bold uppercase text-white">100%</span>
-                    <span class="text-xs font-semibold text-verdeEnergia">Responsabilidade coletiva</span>
+                    <span class="text-xs font-semibold text-verdeEnergia">Zelariam pela academia</span>
                   </div>
                   <p class="text-sm text-slate-600">
-                    Proposta vista como oportunidade de união e cuidado com o patrimônio comum.
+                    100% disseram que cuidariam da academia se ela fosse instalada no bairro. 
                   </p>
                 </article>
               </div>
@@ -573,148 +531,298 @@
         </div>
       </section>
 
+
+
+
+
+      <!-- Galeria de Fotos -->
+      <section class="mx-auto max-w-6xl px-6 py-16" id="galeria">
+        <div class="space-y-8">
+          <div class="max-w-2xl space-y-4">
+            <h2 class="flex items-center gap-3 text-3xl font-extrabold text-slate-900">
+              <i aria-hidden="true" class="bx bxs-photo-album text-4xl text-azulMovimento"></i>
+              Galeria de Fotos
+            </h2>
+            <p class="text-lg text-slate-600">
+              Confira alguns registros dos encontros que marcaram a construção do projeto “Energia em Movimento”.
+            </p>
+          </div>
+          <div class="space-y-12">
+            <section class="space-y-6">
+              <h3 class="text-2xl font-bold text-slate-900">Encontro 1: Escolha do Tema</h3>
+              <p class="text-base text-slate-600">Nesse ponto, a gente estava fazendo a escolha do tema do projeto, pesquisando e discutindo diferentes ideias para encontrar algo que fosse bom para a comunidade e para o meio ambiente.</p>
+              <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/tema.jpeg"
+                    alt="Equipe pesquisando referências para a escolha do tema"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Pesquisa inicial para definir o tema do projeto.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/tema1.jpeg"
+                    alt="Alunos analisando materiais sobre sustentabilidade"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Discussão sobre sustentabilidade durante o primeiro encontro.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/tema2.jpeg"
+                    alt="Grupo reunido na sala debatendo ideias para o projeto"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Debate em grupo para fechar o tema do projeto.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/tema3.jpeg"
+                    alt="Equipe definindo os objetivos do projeto"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Definição conjunta dos objetivos do trabalho.</figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="space-y-6">
+              <h3 class="text-2xl font-bold text-slate-900">Encontro 2: Desenvolvimento do Projeto</h3>
+              <p class="text-base text-slate-600">Nesse ponto, a gente estava escrevendo o projeto em sala de aula e criando os primeiros questionários que seriam aplicados na comunidade para entender o interesse das pessoas pela academia ecológica.</p>
+              <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/desenvolvimento.jpeg"
+                    alt="Alunos escrevendo o projeto em sala de aula"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Produção textual do projeto durante o segundo encontro.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/desenvolvimento1.jpeg"
+                    alt="Equipe organizando ideias no quadro"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Organização das etapas do projeto no quadro.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/desenvolvimento2.jpeg"
+                    alt="Grupo montando os questionários da pesquisa"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Criação dos questionários para a pesquisa de campo.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/desenvolvimento3.jpeg"
+                    alt="Alunos revisando as perguntas do questionário"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Revisão coletiva do questionário aplicado aos moradores.</figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="space-y-6">
+              <h3 class="text-2xl font-bold text-slate-900">Encontro 3: Definição da Apresentação</h3>
+              <p class="text-base text-slate-600">Nesse ponto, a gente estava decidindo como iria ficar a apresentação do projeto e construindo a maquete que mostraria como funcionaria a academia ecológica no nosso bairro.</p>
+              <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/apresentacao.jpeg"
+                    alt="Equipe discutindo como apresentar o projeto"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Planejamento da apresentação final do projeto.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/apresentacao1.jpeg"
+                    alt="Alunos definindo os slides da apresentação"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Definição dos slides da apresentação na feira.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/apresentacao2.jpeg"
+                    alt="Construção da maquete pelos alunos"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Construção da maquete que representa a academia ecológica.</figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="space-y-6">
+              <h3 class="text-2xl font-bold text-slate-900">Momentos da Aplicação do Questionário</h3>
+              <p class="text-base text-slate-600">Nesse ponto, a gente estava aplicando o questionário que criamos anteriormente com os moradores do bairro para entender o apoio à ideia da academia sustentável.</p>
+              <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/questionario.jpeg"
+                    alt="Equipe aplicando o questionário com um morador"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Aplicação do questionário com um morador.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/questionario1.jpeg"
+                    alt="Alunos entrevistando moradores sobre sustentabilidade"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Entrevista com moradores sobre sustentabilidade.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/questionario2.jpeg"
+                    alt="Grupo reunido registrando respostas do questionário"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Registro das respostas do questionário.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/questionario3.jpeg"
+                    alt="Equipe coletando dados dos questionários aplicados"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Coleta de dados dos questionários aplicados.</figcaption>
+                </figure>
+              </div>
+            </section>
+            <section class="space-y-6">
+              <h3 class="text-2xl font-bold text-slate-900">Desenvolvimento e Resultado da Maquete</h3>
+              <p class="text-base text-slate-600">Nesse ponto, a gente estava construindo e finalizando a maquete que mostra como seria a academia ecológica com os equipamentos que geram energia a partir do movimento das pessoas.</p>
+              <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/maquete.jpeg"
+                    alt="Equipe planejando a construção da maquete"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Planejamento da construção da maquete.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/maquete1.jpeg"
+                    alt="Alunos construindo a maquete da academia ecológica"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Construção da maquete da academia ecológica.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/maquete2.jpeg"
+                    alt="Detalhes sendo adicionados à maquete"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Detalhes sendo adicionados à maquete.</figcaption>
+                </figure>
+                <figure class="group overflow-hidden rounded-3xl bg-white shadow-card transition hover:-translate-y-1">
+                  <img
+                    class="h-48 w-full object-cover transition duration-300 ease-out group-hover:scale-105"
+                    src="images/maquete3.jpeg"
+                    alt="Maquete completa da academia ecológica"
+                    loading="lazy"
+                  />
+                  <figcaption class="sr-only">Maquete completa da academia ecológica.</figcaption>
+                </figure>
+              </div>
+            </section>
+          </div>
+        </div>
+      </section>
+
       <!-- Equipe -->
       <section class="mx-auto max-w-6xl px-6 py-16" id="equipe">
         <h2 class="flex items-center gap-3 text-3xl font-extrabold text-slate-900">
           <i aria-hidden="true" class="bx bxs-handshake text-4xl text-verdeEnergia"></i>
-          Equipe Aluna do Projeto
+          Equipe do Projeto
         </h2>
         <p class="mt-4 text-lg text-slate-600">
-          Um grupo curioso, criativo e pronto para pedalar por um futuro melhor!
+          Esse projeto foi feito pelos alunos abaixo. A gente pesquisou, perguntou para a comunidade, montou a maquete e preparou este site para explicar tudo.
+        </p>
+        <p class="mt-2 text-sm text-slate-600">
+          Aqui estão os nomes de todo mundo que trabalhou para transformar a ideia em realidade.
         </p>
         <div class="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-emerald-100 text-3xl font-extrabold text-verdeEnergia">
-              A
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Amanayara Cardoso</h3>
-            <p class="mt-2 text-sm text-slate-600">Apresentadora oficial, convida o público a experimentar a academia ecológica.</p>
+          <!-- Só nomes, como no PDF -->
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Amanayara Cardoso</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-sky-100 text-3xl font-extrabold text-azulMovimento">
-              D
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Dalton Alencar</h3>
-            <p class="mt-2 text-sm text-slate-600">Cuida dos contatos com a comunidade e organiza as entrevistas de campo.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Dalton Alencar</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-yellow-100 text-3xl font-extrabold text-amareloEnergia">
-              D
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Davi Alencar</h3>
-            <p class="mt-2 text-sm text-slate-600">Registra os dados de geração de energia e transforma números em gráficos divertidos.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Davi Alencar</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-pink-100 text-3xl font-extrabold text-pink-500">
-              E
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Emanuelly de Andrade</h3>
-            <p class="mt-2 text-sm text-slate-600">Elabora as histórias em quadrinhos que explicam o caminho da energia.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Emanuelly de Andrade</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-purple-100 text-3xl font-extrabold text-purple-500">
-              E
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Enzo Hort</h3>
-            <p class="mt-2 text-sm text-slate-600">Responsável pelo som e pelos efeitos luminosos da maquete demonstrativa.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Enzo Hort</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-emerald-100 text-3xl font-extrabold text-verdeEnergia">
-              G
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Gabriel Alencar</h3>
-            <p class="mt-2 text-sm text-slate-600">Desenha os esquemas elétricos e ajuda a conectar os pedais ao gerador.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Gabriel Alencar</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-sky-100 text-3xl font-extrabold text-azulMovimento">
-              H
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Hellóa Christiny Morais</h3>
-            <p class="mt-2 text-sm text-slate-600">Cuida da decoração colorida do estande e monta os murais inspiradores.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Hellóa Christiny Morais</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-yellow-100 text-3xl font-extrabold text-amareloEnergia">
-              J
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">João Antonio Gomes</h3>
-            <p class="mt-2 text-sm text-slate-600">Recepciona os visitantes e explica como a energia cinética vira eletricidade.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">João Antonio Gomes</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-pink-100 text-3xl font-extrabold text-pink-500">
-              J
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">João Davi Campos</h3>
-            <p class="mt-2 text-sm text-slate-600">Monta experimentos extras e apresenta curiosidades científicas ao público.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">João Davi Campos</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-purple-100 text-3xl font-extrabold text-purple-500">
-              K
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Kaio Mendes</h3>
-            <p class="mt-2 text-sm text-slate-600">Ajuda na manutenção das bicicletas e garante que tudo esteja pronto para pedalar.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Kaio Mendes</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-emerald-100 text-3xl font-extrabold text-verdeEnergia">
-              L
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Lucas Santos</h3>
-            <p class="mt-2 text-sm text-slate-600">Produz vídeos curtos para as redes sociais e registra momentos da feira.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Lucas Santos</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-sky-100 text-3xl font-extrabold text-azulMovimento">
-              L
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Luis Fernando Saraiva</h3>
-            <p class="mt-2 text-sm text-slate-600">Organiza os formulários de pesquisa e tabula as respostas da comunidade.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Luis Fernando Saraiva</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-yellow-100 text-3xl font-extrabold text-amareloEnergia">
-              L
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Luiz Otavio Silvestre</h3>
-            <p class="mt-2 text-sm text-slate-600">Cria infográficos e banners que mostram o impacto sustentável do projeto.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Luiz Otavio Silvestre</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-pink-100 text-3xl font-extrabold text-pink-500">
-              L
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Luna Morais</h3>
-            <p class="mt-2 text-sm text-slate-600">Responsável pela trilha sonora animada e pelos convites para pedalar.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Luna Morais</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-purple-100 text-3xl font-extrabold text-purple-500">
-              M
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Maria Alicia Martins</h3>
-            <p class="mt-2 text-sm text-slate-600">Coordena a agenda da equipe e garante que todos participem das oficinas.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Maria Alicia Martins</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-emerald-100 text-3xl font-extrabold text-verdeEnergia">
-              M
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Maria Elloa Brito</h3>
-            <p class="mt-2 text-sm text-slate-600">Faz a ponte com os professores e organiza as falas de agradecimento.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Maria Elloa Brito</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-sky-100 text-3xl font-extrabold text-azulMovimento">
-              N
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Nayla Pereira</h3>
-            <p class="mt-2 text-sm text-slate-600">Cuida da timeline do painel digital e informa a produção de energia ao vivo.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Nayla Pereira</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-yellow-100 text-3xl font-extrabold text-amareloEnergia">
-              N
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Nelson Otavio Alencar</h3>
-            <p class="mt-2 text-sm text-slate-600">Apresenta o protótipo da bicicleta geradora e explica os componentes elétricos.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Nelson Otavio Alencar</h3>
           </article>
-          <article class="rounded-3xl bg-white p-6 text-center shadow-card transition hover:-translate-y-1 hover:-rotate-1">
-            <div class="mx-auto flex h-24 w-24 items-center justify-center rounded-full bg-pink-100 text-3xl font-extrabold text-pink-500">
-              S
-            </div>
-            <h3 class="mt-4 text-xl font-bold text-slate-900">Swyanne Alves</h3>
-            <p class="mt-2 text-sm text-slate-600">Registra depoimentos do público e produz relatos para o relatório final.</p>
+          <article class="rounded-3xl bg-white p-6 text-center shadow-card">
+            <h3 class="text-lg font-bold text-slate-900">Swyanne Alves</h3>
           </article>
         </div>
       </section>
@@ -728,75 +836,57 @@
               Contato & Referências
             </h2>
             <p class="mt-4 text-lg text-slate-600">
-              Gostou do projeto? Vamos conversar, trocar ideias e fazer essa academia ecológica chegar ainda mais longe!
+              Se quiser saber mais sobre o projeto ou aplicar na sua escola, manda um e-mail pra gente.
             </p>
             <div class="mt-6 grid gap-6 md:grid-cols-2">
               <div class="rounded-3xl bg-white p-6 shadow-sm">
                 <h3 class="text-lg font-bold text-slate-900">Fale com a equipe</h3>
                 <p class="mt-3 text-sm text-slate-600">
                   <strong class="font-semibold text-verdeEnergia">E-mail:</strong>
-                  <a class="text-azulMovimento underline underline-offset-4" href="mailto:energia.movimento@escola.com">
-                    energia.movimento@escola.com
+                  <a class="text-azulMovimento underline underline-offset-4" href="mailto:kecinha1ana@gmail.com">
+                    kecinha1ana@gmail.com
                   </a>
-                </p>
-                <p class="mt-3 text-sm text-slate-600">
-                  <strong class="font-semibold text-verdeEnergia">Instagram:</strong>
-                  <span>@energia.movimento</span>
                 </p>
               </div>
               <div class="rounded-3xl bg-white p-6 shadow-sm">
                 <h3 class="text-lg font-bold text-slate-900">Fontes de estudo</h3>
                 <ul class="mt-3 space-y-2 text-sm text-slate-600">
                   <li>
-                    <a
-                      class="text-azulMovimento underline underline-offset-4"
-                      href="https://www.ecycle.com.br/energia-cinetica/"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      Energia cinética na prática
-                    </a>
+                    <span class="text-slate-700">Energia cinética — Toda Matéria</span>
                   </li>
                   <li>
-                    <a
-                      class="text-azulMovimento underline underline-offset-4"
-                      href="https://www.ecycle.com.br/energia-renovavel/"
-                      target="_blank"
-                      rel="noopener"
-                    >
-                      Guia de energias renováveis
-                    </a>
+                    <span class="text-slate-700">Energia mecânica — Brasil Escola</span>
+                  </li>
+                  <li>
+                    <span class="text-slate-700">Academias ao ar livre — Tryanon</span>
+                  </li>
+                  <li>
+                    <span class="text-slate-700">Academia que usa energia dos exercícios — PEGN</span>
                   </li>
                 </ul>
               </div>
             </div>
-            <p class="mt-6 text-center text-sm font-semibold text-slate-600">
-              “Sustentabilidade é o movimento que muda o mundo.” — Equipe Energia em Movimento
-            </p>
           </div>
         </div>
       </section>
     </main>
 
-    <footer class="bg-slate-900 py-6">
-      <p class="flex items-center justify-center gap-2 text-center text-sm font-semibold text-white">
-        Energia em Movimento — Feira de Ciências | Feito com
-        <i aria-hidden="true" class="bx bxs-bolt text-lg text-amareloEnergia"></i>
-        por jovens cientistas.
-      </p>
-    </footer>
+  <footer class="bg-slate-900 py-6">
+    <p class="flex items-center justify-center gap-2 text-center text-sm font-semibold text-white">
+      Energia em Movimento — Sustentabilidade e Saúde em um Só Ritmo
+      <i aria-hidden="true" class="bx bxs-bolt text-amareloEnergia"></i>
+      Feito pela nossa turma para a feira de ciências.
+    </p>
+  </footer>
 
     <script>
       const counters = document.querySelectorAll(".counter");
-      const options = {
-        threshold: 0.4,
-      };
-
+      const options = { threshold: 0.4 };
       const runCounter = (entry) => {
         const el = entry.target;
         const target = Number(el.dataset.target);
         let current = 0;
-        const increment = Math.ceil(target / 60); // simples e leve
+        const increment = Math.ceil(target / 60);
         const interval = setInterval(() => {
           current += increment;
           if (current >= target) {
@@ -807,7 +897,6 @@
           }
         }, 30);
       };
-
       const observer = new IntersectionObserver((entries, obs) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
@@ -816,7 +905,6 @@
           }
         });
       }, options);
-
       counters.forEach((counter) => observer.observe(counter));
     </script>
   </body>
